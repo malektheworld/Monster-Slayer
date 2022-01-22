@@ -40,7 +40,7 @@
             <h2> Game Over!</h2>
             <h3 v-if="winner === 'Monster' "> You Lost !</h3>
             <h3 v-else-if="winner === 'Player' "> You Won ! </h3>
-            <h3 v-else> A Drwa ! <br> Try again </h3>
+            <h3 v-else> A Draw ! <br> Try again </h3>
             <button @click='startGame' class="btn btn-outline-dark">Start New Game</button>
         </section>
         <section id="controls" v-else>
@@ -57,7 +57,7 @@
                     <span v-if="logMessage.actionType === 'heal' "> heals himself for
                         <span class="badge bg-success"> {{logMessage.actionValue}} </span>
                     </span>
-                    <span v-else> aatakcs and deals <span class="badge bg-danger">  {{logMessage.actionValue}} </span> </span>
+                    <span v-else> attacks and deals <span class="badge bg-danger">  {{logMessage.actionValue}} </span> </span>
                 </li>
             </ul>
         </section>
